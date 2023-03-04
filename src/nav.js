@@ -1,6 +1,6 @@
 import icon from "./icon.png";
 
-export default function navload {
+export default function navload (){
     //navbar creation
   const mdiv = document.querySelector("#content");
   const navbar = document.createElement("nav");
