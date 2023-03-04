@@ -35,7 +35,7 @@ export default function pageload() {
   list2a.href = "#Menu";
   list3a.href = "#Contact-Us";
   //end of navbar
-  //start of main
+  //main work
   maindiv.classList.add('main-div');
   headerm.innerText = "Chef Steve";
   image2.src = chef;
