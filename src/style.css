@@ -8,7 +8,8 @@ body{
     background: linear-gradient(30deg, rgba(208,85,85,1) 0%, rgba(226,55,45,1) 49%, rgba(217,33,33,1) 100%);
     background-attachment: fixed;
     color:whitesmoke;
-    overflow: hidden;
+    overflow: auto;
+    text-align: center;
 }
 .nav-bar-header{
     font-size: 50px;
@@ -24,9 +25,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border:1px solid black;
-    border-radius:10px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
     box-shadow: 0px 6px 20px 5px rgba(0,0,0,0.2);
+    background: linear-gradient(30deg, rgba(208,85,85,1) 0%, rgba(226,55,45,1) 49%, rgba(217,33,33,1) 100%);
 }
 .nav-ul{
     list-style-type: none;
@@ -40,6 +42,7 @@ body{
 .nav-a{
     text-decoration: none;
     color: whitesmoke;
+    cursor: pointer;
 }
 .main-div{
     display: flex;
@@ -51,6 +54,15 @@ body{
     font-size: 28px;
 }
 .main-img{
-    width: 40%;
-    height: 40%;
+    width: 600px;
+    height: 400px;
+    display: block;
+}
+.menu-ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

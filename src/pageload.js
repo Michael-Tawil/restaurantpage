@@ -1,6 +1,8 @@
 import chef from "./chef.jpg";
 import navload from "./nav";
 export default function pageload() {
+  const mdiv = document.querySelector("#content");
+  mdiv.innerHTML = "";
   navload()
   const maindiv = document.createElement("div");
   const headerm = document.createElement("h1");

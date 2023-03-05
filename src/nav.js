@@ -1,4 +1,6 @@
 import icon from "./icon.png";
+import pageload from "./pageload";
+import menuload from "./menuload";
 
 export default function navload (){
     //navbar creation
@@ -26,9 +28,6 @@ export default function navload (){
   list1a.innerText = "Home";
   list2a.innerText = "Menu";
   list3a.innerText = "Contact Us";
-  list1a.href = "#Home";
-  list2a.href = "#Menu";
-  list3a.href = "#Contact-Us";
   //end of navbar
   //displaying nav
   mdiv.appendChild(navbar);
@@ -41,4 +40,24 @@ export default function navload (){
   list1.appendChild(list1a);
   list2.appendChild(list2a);
   list3.appendChild(list3a);
+
+const navlink = document.querySelectorAll('a');
+console.log(navlink)
+
+const handleinput = (e) => {
+    console.log(e.target.innerText)
+    switch(e.target.innerText){
+        case "Home":
+            pageload();
+            break;
+        case "Menu":
+            menuload();
+            break;
+        case "Contact Us":
+            contactusload();
+            break;            
+    }
+}
+
+navlink.forEach(link => link.addEventListener('click',handleinput));
 }
