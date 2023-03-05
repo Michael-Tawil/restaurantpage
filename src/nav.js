@@ -1,7 +1,6 @@
 import icon from "./icon.png";
 import pageload from "./pageload";
 import menuload from "./menuload";
-
 export default function navload (){
     //navbar creation
   const mdiv = document.querySelector("#content");
@@ -41,10 +40,10 @@ export default function navload (){
   list2.appendChild(list2a);
   list3.appendChild(list3a);
 
-const navlink = document.querySelectorAll('a');
-console.log(navlink)
+  const navlink = document.querySelectorAll('a');
+  console.log(navlink)
 
-const handleinput = (e) => {
+  const handleinput = (e) => {
     console.log(e.target.innerText)
     switch(e.target.innerText){
         case "Home":
@@ -56,8 +55,8 @@ const handleinput = (e) => {
         case "Contact Us":
             contactusload();
             break;            
-    }
-}
+      }
+  }
 
 navlink.forEach(link => link.addEventListener('click',handleinput));
 }
