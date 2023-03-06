@@ -1,6 +1,7 @@
 import icon from "./icon.png";
 import pageload from "./pageload";
 import menuload from "./menuload";
+import contactusload from "./contact";
 export default function navload (){
     //navbar creation
   const mdiv = document.querySelector("#content");
